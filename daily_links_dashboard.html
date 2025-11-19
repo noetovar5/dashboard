@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noe Tovar Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .link-box {
+            width: 200px;
+            margin: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .link-box img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .link-box a {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        .link-box a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <!--HTML buttons for future pages Code -->
+    <div style="position: absolute; top: 10px; left: 10px;">
+        <button onclick="location.href='https://www.ssfcu.org/'">SSFCU Home</button>
+        <button onclick="location.href='https://ssfcu.sharepoint.com/:u:/r/sites/DisasterRecovery-DRTechnicalDocuments/_layouts/15/Doc.aspx?sourcedoc=%7B0b8168b3-8883-4842-aa80-9b29bc5ae611%7D&action=edit&wdIsModeSwitch=1&or=PrevEdit&CID=612e2496-65af-49b0-83c2-f0d25e332f88'">POC-ADS DR</button>
+        <button onclick="location.href='https://ssfcu.sharepoint.com/:u:/r/sites/DisasterRecovery-DRTechnicalDocuments/_layouts/15/Doc.aspx?sourcedoc=%7B8D636D06-5744-467A-879D-97A9779CEEB2%7D&file=Wisenet%20Wave.vsdx&action=default&mobileredirect=true'">Wisenet</button>
+        <button onclick="location.href='page2.html'">Page 4</button>
+        <button onclick="location.href='page3.html'">Page 5</button>
+    </div>
+
+    <!--HTML and JavaScript Code -->
+
+    <div style="position: absolute; top: 10px; right: 20px; font-family: Arial; font-size: 18px; font-weight: bold; color: red;" id="datetime"></div>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const formatted = now.toLocaleString();
+        document.getElementById('datetime').innerText = formatted;
+      }
+    
+      setInterval(updateDateTime, 1000); // Update every second
+      updateDateTime(); // Initial call
+    </script>
+    
+    <h1><font color="darkblue">Daily Dashboard</font></h1>
+    <img src="C:\Users\A33957\Downloads\Dashboard App\assets\header image.jpg.png" alt="Header Image"ent -->
+<div>
+
+    <div class="container">
+        <!-- Repeat this block for each URL -->
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Analyzing Results Pro 4.png" alt="ServU">
+            <a href="https://servu.ssfcu.org/View/9a06b0af-2910-4783-a857-ba9e0ccb711a" target="_blank">SurvU</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\hidashboard.jpg" alt="Site 2">
+            <a href="https://hidashboards.apps.ssfcu.org/57" target="_blank">HI-Dashboard</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\adobe workfront.jpg" alt="Site 3">
+            <a href="https://experience.adobe.com/#/@ssfcu/so:ssfcu-Production/workfront/home/workspaces" target="_blank">Adobe Work front</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\cyberark.jpg" alt="Site 4">
+            <a href="https://cyberark.ssfcu.org/PasswordVault/v10/logon/ldap" target="_blank">CYBERARK</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\synergy.jpg" alt="Site 5">
+            <a href="https://synergy.ssfcu.org/" target="_blank">SYNERGY</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\sharepoint.jpg" alt="Site 6">
+            <a href="https://ssfcu.sharepoint.com/sites/EnterpriseApplicationSupport/Lists/CertificateList/UpcomingCerts.aspx?ovuser=26e17cb8%2Da61a%2D44ca%2Db283%2D14419424ebcf%2CNTovar%40ssfcu%2Eorg&OR=Teams%2DHL&CT=1759263505071&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">SharePoint</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\insight.jpg" alt="Site 7">
+            <a href="https://onfirstup.com/ssfcu/ssfcu/" target="_blank">Insight</a>
+        </div>
+        <div class="link-box">
+            <img src="C:\Users\A33957\Downloads\Dashboard App\assets\documentation.png" alt="Site 8">
+            <a href="https://ssfcu.sharepoint.com/sites/DisasterRecovery-DRTechnicalDocuments/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FDisasterRecovery%2DDRTechnicalDocuments%2FShared%20Documents%2FDR%20Technical%20Documents%2FApplication%20Services&viewid=f17ac130%2Dcbc4%2D4e1b%2Daf97%2Db7cf5f0d3171" target="_blank">DR Technical Documentation</a>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Section 2: Two side-by-side calendar iframes -->
+    <div style="text-align: center; padding: 30px;">
+        <table style="margin: 0 auto;">
+            <tr>
+                <td><iframe src="https://hidashboards.apps.ssfcu.org/60" style="border: 0" width="800" height="600"></iframe></td>
+                <td><iframe src="https://hidashboards.apps.ssfcu.org/40" style="border: 0" width="800" height="600"></iframe></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Applications I support below this container -->
+<footer style="text-align: center; margin-top: 50px;">
+    <h1><font color="darkblue">Applications to Monitor</font></h1>
+</footer>
+    
+<div class="container">
+    <!-- Repeat this block for each URL -->
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\automation anywhere.png" alt="ServU">
+        <a href="https://a360-ssfcu-prod.my.automationanywhere.digital/#/login?next=/dashboard/home/overview" target="_blank">Automation Anywhere</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\vnware.png" alt="Site 2">
+        <a href="https://hdqvmcvcs2.ssfcuad.ssfcu.org/ui/app/datacenter;nav=v/urn:vmomi:Datacenter:datacenter-57:37af1354-a7df-4961-8489-06f13c217879/summary" target="_blank">Vsphere</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Paragon Portal.png" alt="Site 3">
+        <a href="https://paragonedge.my.site.com/login" target="_blank">WEBFAST</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\monitoring3.png" alt="Site 4">
+        <a href="https://monitor.noetovar.com" target="_blank">Monitoring</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Bar_Chart4.gif" alt="Site 5">
+        <a href="https://hidashboards.apps.ssfcu.org/36" target="_blank">MasterCard ESS</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Bar_Chart.gif" alt="Site 6">
+        <a href="https://ssfcu.sharepoint.com/sites/EnterpriseApplicationSupport/Lists/CertificateList/UpcomingCerts.aspx?ovuser=26e17cb8%2Da61a%2D44ca%2Db283%2D14419424ebcf%2CNTovar%40ssfcu%2Eorg&OR=Teams%2DHL&CT=1759263505071&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNTA5MTExNjAxNSIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank">SharePoint</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Bar_Chart4.gif" alt="Site 7">
+        <a href="https://hidashboards.apps.ssfcu.org/56" target="_blank">Halo</a>
+    </div>
+    <div class="link-box">
+        <img src="C:\Users\A33957\Downloads\Dashboard App\assets\Bar_Chart.gif" alt="Site 8">
+        <a href="https://my.adp.com/static/redbox/?#/time/unifiedtimeoff" target="_blank">HR Time off</a>
+    </div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer style="text-align: center; margin-top: 50px;">
+    <p>Design by:Noe Tovar 2025 | Daily Dashboard</p>
+</footer>
+</body>
+</html>
